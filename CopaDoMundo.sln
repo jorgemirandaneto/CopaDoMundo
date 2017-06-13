@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopaDoMundo", "CopaDoMundo\CopaDoMundo.csproj", "{9D78B2C6-6355-4D7D-8A26-9769A76AC6BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9D78B2C6-6355-4D7D-8A26-9769A76AC6BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D78B2C6-6355-4D7D-8A26-9769A76AC6BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D78B2C6-6355-4D7D-8A26-9769A76AC6BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D78B2C6-6355-4D7D-8A26-9769A76AC6BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

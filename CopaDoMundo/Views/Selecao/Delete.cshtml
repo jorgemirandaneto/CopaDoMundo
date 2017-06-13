@@ -1,0 +1,24 @@
+﻿@model CopaDoMundo.Models.Selecao
+
+<br />
+<fieldset class="form-group">
+    <legend>Você tem certeza que deseja remover a seleção?</legend>
+    <div class="display-field">
+        País:  @Html.DisplayFor(model => model.Pais)
+    </div>
+    <div class="display-field">
+        Técnico: @Html.DisplayFor(model => model.Tecnico)
+    </div>
+</fieldset>
+<br/>
+@using (Html.BeginForm())
+{
+    <p>
+        <a href="@Url.Action("Delete","Selecao")">
+            <input type="submit" value="Deletar" class="btn btn-group-sm" />
+        </a>
+    </p>
+    <p>
+        @Html.ActionLink("Listagem de seleções", "Index")
+    </p>
+}

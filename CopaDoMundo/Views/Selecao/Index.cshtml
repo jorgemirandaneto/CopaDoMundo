@@ -1,0 +1,31 @@
+﻿@model IEnumerable<CopaDoMundo.Models.Selecao>
+@{
+    ViewBag.Title = "Index";
+}
+<br />
+<p>
+    <a href="@Url.Action("Create","Selecao")">
+        <input type="button"value="Novo" class="btn btn-group-sm" />
+    </a>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.Pais)</th>
+        <th>@Html.DisplayNameFor(model => model.Tecnico)</th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Pais)</td>
+            <td>@Html.DisplayFor(modelItem => item.Tecnico)</td>
+            <td>
+                <a href="@Url.Action("Delete","Selecao",new { id = item.Id})">
+                    <input type="button" value="Remover" icon class="btn btn-group-sm">
+                </a>
+            </td>
+        </tr>
+    }
+</table>
