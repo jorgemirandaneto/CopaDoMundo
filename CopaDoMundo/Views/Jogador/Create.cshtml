@@ -16,7 +16,7 @@
             @Html.LabelFor(model => model.Posicao)
         </div>
         <div class="edito-field">
-            @Html.EditorFor(model => model.Posicao, new {@class = "campoData" })
+            @Html.EditorFor(model => model.Posicao)
             @Html.ValidationMessageFor(model => model.Posicao)
         </div>
         <br />
@@ -24,7 +24,7 @@
             @Html.LabelFor(model => model.Nascimento)
         </div>
         <div class="edito-field">
-            @Html.EditorFor(model => model.Nascimento)
+            @Html.TextBoxFor(model => model.Nascimento, new { @type = "date"} )
             @Html.ValidationMessageFor(model => model.Nascimento)
         </div>
         <br />
@@ -32,7 +32,7 @@
             @Html.LabelFor(model => model.Altura)
         </div>
         <div class="edito-field">
-            @Html.EditorFor(model => model.Altura)
+            @Html.EditorFor(model => model.Altura, new {@type = "number" })
             @Html.ValidationMessageFor(model => model.Altura)
         </div>
         <br />
@@ -46,5 +46,5 @@
         <br />
         <input type="submit" value="Salvar" class="btn btn-group-sm" />
     </fieldset>
-        
 }
+
