@@ -1,0 +1,50 @@
+﻿@model CopaDoMundo.Models.Jogador
+
+@using (Html.BeginForm())
+{
+    <br />
+    <fieldset>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Nome)
+        </div>
+        <div class="edito-field">
+            @Html.EditorFor(model => model.Nome)
+            @Html.ValidationMessageFor(model => model.Nome)
+        </div>
+        <br />
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Posicao)
+        </div>
+        <div class="edito-field">
+            @Html.EditorFor(model => model.Posicao, new {@class = "campoData" })
+            @Html.ValidationMessageFor(model => model.Posicao)
+        </div>
+        <br />
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Nascimento)
+        </div>
+        <div class="edito-field">
+            @Html.EditorFor(model => model.Nascimento)
+            @Html.ValidationMessageFor(model => model.Nascimento)
+        </div>
+        <br />
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Altura)
+        </div>
+        <div class="edito-field">
+            @Html.EditorFor(model => model.Altura)
+            @Html.ValidationMessageFor(model => model.Altura)
+        </div>
+        <br />
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SelecaoId)
+        </div>
+        <div class="edito-field">
+            @Html.DropDownList("SelecaoID", null, String.Empty)
+            @Html.ValidationMessageFor(model => model.SelecaoId)
+        </div>
+        <br />
+        <input type="submit" value="Salvar" class="btn btn-group-sm" />
+    </fieldset>
+        
+}
