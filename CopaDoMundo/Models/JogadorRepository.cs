@@ -33,6 +33,17 @@ namespace CopaDoMundo.Models
             context.SaveChanges();
         }
 
+        public Jogador Buscar(int id)
+        {
+            return context.Jogadores.Find(id);
+        }
+
+        public void Remove(int id)
+        {
+            Jogador jogador = context.Jogadores.Find(id);
+            context.Jogadores.Remove(jogador);    
+        }
+
         protected virtual void Dispose(bool disposing)
         {
             if (!this.disposed)

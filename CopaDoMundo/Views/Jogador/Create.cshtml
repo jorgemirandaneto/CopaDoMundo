@@ -24,7 +24,7 @@
             @Html.LabelFor(model => model.Nascimento)
         </div>
         <div class="edito-field">
-            @Html.TextBoxFor(model => model.Nascimento, new { @type = "date"} )
+            @Html.EditorFor(model => model.Nascimento)
             @Html.ValidationMessageFor(model => model.Nascimento)
         </div>
         <br />
@@ -32,7 +32,7 @@
             @Html.LabelFor(model => model.Altura)
         </div>
         <div class="edito-field">
-            @Html.EditorFor(model => model.Altura, new {@type = "number" })
+            @Html.EditorFor(model => model.Altura)
             @Html.ValidationMessageFor(model => model.Altura)
         </div>
         <br />
@@ -47,4 +47,11 @@
         <input type="submit" value="Salvar" class="btn btn-group-sm" />
     </fieldset>
 }
+<br />
+<div>
+    @Html.ActionLink("Listagem de jogadores","Index")
+</div>
 
+@section Scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+    }

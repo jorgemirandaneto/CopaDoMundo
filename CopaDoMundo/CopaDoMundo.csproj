@@ -169,6 +169,14 @@
     <Compile Include="Migrations\201706131308428_RequeridoSelecao.Designer.cs">
       <DependentUpon>201706131308428_RequeridoSelecao.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706201220574_JogadoresRequeridos.cs" />
+    <Compile Include="Migrations\201706201220574_JogadoresRequeridos.Designer.cs">
+      <DependentUpon>201706201220574_JogadoresRequeridos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706201233513_JogadoresRequeridos1.cs" />
+    <Compile Include="Migrations\201706201233513_JogadoresRequeridos1.Designer.cs">
+      <DependentUpon>201706201233513_JogadoresRequeridos1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\JogadorRepository.cs" />
     <Compile Include="Models\K19Context.cs" />
@@ -258,6 +266,8 @@
     <Content Include="Views\Selecao\Index.cshtml" />
     <Content Include="Views\Selecao\Delete.cshtml" />
     <Content Include="Views\Jogador\Create.cshtml" />
+    <Content Include="Views\Jogador\Index.cshtml" />
+    <Content Include="Views\Jogador\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -276,6 +286,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201706131308428_RequeridoSelecao.resx">
       <DependentUpon>201706131308428_RequeridoSelecao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706201220574_JogadoresRequeridos.resx">
+      <DependentUpon>201706201220574_JogadoresRequeridos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706201233513_JogadoresRequeridos1.resx">
+      <DependentUpon>201706201233513_JogadoresRequeridos1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
