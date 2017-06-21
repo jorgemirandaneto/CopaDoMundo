@@ -20,6 +20,8 @@ namespace CopaDoMundo.Models
         public string NewPassword { get; set; }
         
         [Required]
+        [Display(Name = "Confimação de senha")]
+        [Compare("NewPassword",ErrorMessage = "A senha não confere")]
         public string ConfirmPassword { get; set; }
-    }
+    } 
 }

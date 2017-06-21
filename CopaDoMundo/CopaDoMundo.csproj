@@ -182,6 +182,8 @@
     <Compile Include="Models\JogadorRepository.cs" />
     <Compile Include="Models\K19Context.cs" />
     <Compile Include="Models\Jogador.cs" />
+    <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Models\RegisterModel.cs" />
     <Compile Include="Models\Selecao.cs" />
     <Compile Include="Models\SelecaoRepository.cs" />
     <Compile Include="Models\UnitOfWork.cs" />
