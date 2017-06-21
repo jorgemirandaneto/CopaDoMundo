@@ -1,0 +1,37 @@
+﻿@model IEnumerable<CopaDoMundo.Models.Jogador>
+@{
+    ViewBag.Title = "Index";
+}
+<br />
+<p>
+    <a href="@Url.Action("Create", "Jogador")">
+        <input type="button" value="Novo" class="btn btn-group-sm" />
+    </a>
+</p>
+<br/>
+<table class="table">
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.Nome)</th>
+        <th>@Html.DisplayNameFor(model => model.Posicao)</th>
+        <th>@Html.DisplayNameFor(model => model.Nascimento)</th>
+        <th>@Html.DisplayNameFor(model => model.Altura)</th>
+        <th>@Html.DisplayNameFor(model => model.Selecao)</th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+      <tr>
+          <td>@Html.DisplayFor(modelItem => item.Nome)</td>
+          <td>@Html.DisplayFor(modelItem => item.Posicao)</td>
+          <td>@Html.DisplayFor(modelItem => item.Nascimento)</td>
+          <td>@Html.DisplayFor(modelItem => item.Altura)</td>
+          <td>@Html.DisplayFor(modelItem => item.Selecao.Pais)</td>
+          <td>
+              <a href="@Url.Action("Delete","Jogador", new { id = item.Id})">
+                  <input type="button" value="Deletar" class="btn btn-group-sm" />
+              </a>
+          </td>
+      </tr>      
+    }
+
+</table>

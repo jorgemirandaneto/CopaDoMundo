@@ -58,3 +58,5 @@ c:\users\jorge.miranda\documents\visual studio 2015\Projects\CopaDoMundo\CopaDoM
 C:\Users\jorge.miranda\documents\visual studio 2015\Projects\CopaDoMundo\CopaDoMundo\obj\Debug\CopaDoMundo.Migrations.InitialCreate.resources
 C:\Users\jorge.miranda\documents\visual studio 2015\Projects\CopaDoMundo\CopaDoMundo\obj\Debug\CopaDoMundo.csproj.GenerateResource.Cache
 C:\Users\jorge.miranda\documents\visual studio 2015\Projects\CopaDoMundo\CopaDoMundo\obj\Debug\CopaDoMundo.Migrations.RequeridoSelecao.resources
+C:\Users\jorge.miranda\documents\visual studio 2015\Projects\CopaDoMundo\CopaDoMundo\obj\Debug\CopaDoMundo.Migrations.JogadoresRequeridos.resources
+C:\Users\jorge.miranda\documents\visual studio 2015\Projects\CopaDoMundo\CopaDoMundo\obj\Debug\CopaDoMundo.Migrations.JogadoresRequeridos1.resources

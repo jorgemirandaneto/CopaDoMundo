@@ -1,0 +1,31 @@
+﻿@model CopaDoMundo.Models.Jogador
+<h2>Você tem certeza que deseja deletar esse jogador</h2>
+
+<br/>
+<fieldset>
+    <div>
+        <b> Nome:  @Html.DisplayFor(model => model.Nome)</b>
+    </div>
+    <div>
+        <b> Posição:  @Html.DisplayFor(model => model.Posicao)</b>
+    </div>
+    <div>
+        <b> Data de Nascimento:  @Html.DisplayFor(model => model.Nascimento)</b>
+    </div>
+    <div>
+        <b> Altura:  @Html.DisplayFor(model => model.Altura)</b>
+    </div>
+    <div>
+        <b> Selecão:  @Html.DisplayFor(model => model.Selecao.Pais)</b>
+    </div>
+</fieldset>
+<br />
+@using (Html.BeginForm())
+{
+    <p>
+        <input type="submit" value="Deletar" class="btn btn-group-sm" />
+    </p>
+    <p>
+        @Html.ActionLink("Listagem de jogadores", "Index")
+    </p>
+}
