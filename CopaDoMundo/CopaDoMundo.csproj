@@ -158,6 +158,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\JogadorController.cs" />
     <Compile Include="Controllers\SelecaoController.cs" />
+    <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -182,6 +183,8 @@
     <Compile Include="Models\JogadorRepository.cs" />
     <Compile Include="Models\K19Context.cs" />
     <Compile Include="Models\Jogador.cs" />
+    <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Models\RegisterModel.cs" />
     <Compile Include="Models\Selecao.cs" />
     <Compile Include="Models\SelecaoRepository.cs" />
     <Compile Include="Models\UnitOfWork.cs" />
@@ -269,6 +272,7 @@
     <Content Include="Views\Jogador\Create.cshtml" />
     <Content Include="Views\Jogador\Index.cshtml" />
     <Content Include="Views\Jogador\Delete.cshtml" />
+    <Content Include="Views\Usuario\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
