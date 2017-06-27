@@ -1,0 +1,44 @@
+﻿@model CopaDoMundo.Models.RegisterModel
+@{
+    ViewBag.Title = "Cadastrar";
+}
+
+<hgroup class="modal-title">
+    <h1>@ViewBag.Title</h1>
+</hgroup>
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary()
+
+    <fieldset>
+        <legend>
+            <p class="message-info">
+                A Senha deve ter no minino @Membership.MinRequiredPasswordLength caracteres.
+            </p>
+        </legend>
+        <div>
+            @Html.EditorFor(m => m.UserName, new { htmlAttributes = new { @class = "form-control", placeholder = "Usuário", @style = "width: 250px; height: 40px", type = "text" } })
+        </div>
+        <br />
+        <div>
+            @Html.EditorFor(m => m.Email, new { htmlAttributes = new { @class = "form-control", placeholder = "Email", @style = "width: 250px; height: 40px", type = "text" } })
+        </div>
+        <br />
+        <div>
+            @Html.EditorFor(m => m.Password, new { htmlAttributes = new { @class = "form-control", placeholder = "Senha", @style = "width: 250px; height: 40px", type = "text" } })
+        </div>
+        <br />
+        <div>
+            @Html.EditorFor(m => m.ConfirmPassword, new { htmlAttributes = new { @class = "form-control", placeholder = "Confirmar senha", @style = "width: 250px; height: 40px", type = "text" } })
+        </div>
+    </fieldset>
+    <br />
+    <input type="submit" value="Salvar" class="btn btn-group-sm" style="width:250px; height:40px;" />
+}
+
+@section Scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+}
