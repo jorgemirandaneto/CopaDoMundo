@@ -68,7 +68,7 @@ namespace CopaDoMundo.Controllers
                 }
                 else
                 {
-                    ModelState.AddModelError("", "Erro ao registrar");
+                    ModelState.AddModelError("", ErrorCodeToString(createStatus));
                 }
             }
             return View(model);

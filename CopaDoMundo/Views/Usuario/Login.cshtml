@@ -1,34 +1,37 @@
-﻿@model CopaDoMundo.Models.ChangePasswordModel
-
+﻿@model CopaDoMundo.Models.LoginModel
 @{
-    ViewBag.Title = "Alteração de senha";
+    ViewBag.Title = "Login";
 }
 
+<h2>Entrar</h2>
 
-<hgroup class="title">
-    @{
-        <h1>@ViewBag.Title</h1>
-    }
-</hgroup>
-
-<p>
-    Senhas devem ser no minimo @Membership.MinRequiredPasswordLength caracteres.
-</p>
-
-@using (Html.BeginForm())
+@using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl }))
 {
+    @Html.ValidationSummary(true, "Login não foi efetuado. Informe os dados corretos.")
+
     <fieldset>
-        <legend>Alteração de senha</legend>
-        <div class="input-group-btn">
-            @Html.EditorFor(model => model.OldPassword, new { htmlAttributes = new { @class = "form-control", placeholder = "Digite a senha antiga", @style = "width: 200px;", @type = "password" } })
-        </div>
+        <legend>Informe seu login e senha.</legend>
         <div>
-            @Html.EditorFor(model => model.NewPassword, new { htmlAttributes = new { @class = "form-control", placeholder = "Digite a nova senha", @style = "width: 200px;", @type = "password" } })
-        </div>
-        <div>
-            @Html.EditorFor(model => model.ConfirmPassword, new { htmlAttributes = new { @class = "form-control", placeholder = "Confirme sua senha", @style = "width: 200px;", @type = "password" } })
+            @Html.EditorFor(m => m.UserName, new { htmlAttributes = new { @class = "form-control", placeholder = "Login", @style = "width: 250px; height: 40px", type = "text" } })
         </div>
         <br />
-        <input type="submit"  value="Alterar" class="btn btn-group-sm" style="width: 200px;" />
+        <div>
+            @Html.EditorFor(m => m.UserName, new { htmlAttributes = new { @class = "form-control", placeholder = "Senha", @style = "width: 250px; height: 40px", @type = "password" } })
+        </div>
+        <br />
+        <div>
+            Lembre-me
+            @Html.CheckBoxFor(m => m.RememberMe)
+        </div>
+        <br />
+        <div>
+            <input type="submit" value="Entrar" class="btn btn-group-sm" style="width:250px; height:40px;"/>
+        </div>
+        <br />
+        @Html.ActionLink("Cadastre-se","Regiter")
     </fieldset>
+}
+
+@section Scripts{
+    @Scripts.Render("~/bundles/jqueryval")
 }

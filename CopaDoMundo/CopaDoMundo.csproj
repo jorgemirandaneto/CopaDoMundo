@@ -272,6 +272,8 @@
     <Content Include="Views\Jogador\Create.cshtml" />
     <Content Include="Views\Jogador\Index.cshtml" />
     <Content Include="Views\Jogador\Delete.cshtml" />
+    <Content Include="Views\Usuario\AteracaoDeSenha.cshtml" />
+    <Content Include="Views\Usuario\SenhaAlterada.cshtml" />
     <Content Include="Views\Usuario\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
