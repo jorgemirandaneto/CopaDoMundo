@@ -272,9 +272,10 @@
     <Content Include="Views\Jogador\Create.cshtml" />
     <Content Include="Views\Jogador\Index.cshtml" />
     <Content Include="Views\Jogador\Delete.cshtml" />
-    <Content Include="Views\Usuario\AteracaoDeSenha.cshtml" />
+    <Content Include="Views\Usuario\ChangePassword.cshtml" />
     <Content Include="Views\Usuario\SenhaAlterada.cshtml" />
     <Content Include="Views\Usuario\Login.cshtml" />
+    <Content Include="Views\Usuario\Register.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
