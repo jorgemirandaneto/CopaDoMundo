@@ -1,0 +1,18 @@
+﻿@if (Request.IsAuthenticated)
+{
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            Olá, @Html.ActionLink(User.Identity.Name, "ChangePassword", "Usuário", routeValues: null, htmlAttributes: new { @class = "username", title = "Alterar Senha" })!
+            @Html.ActionLink("Sair", "Logoff", "Usuario")
+        </ul>
+    </div>
+}
+else
+{
+    <div class="navbar-right">
+        <ul class="nav navbar-nav">
+            <li>@Html.ActionLink("Entrar", "Login", "Usuario", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+            <li>@Html.ActionLink("Cadastrar", "Register", "Usuario", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>          
+        </ul>
+    </div>
+}
